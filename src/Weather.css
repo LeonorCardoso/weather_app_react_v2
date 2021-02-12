@@ -1,0 +1,18 @@
+li {
+  list-style-type: none;
+}
+
+.Weather {
+  border: 3px solid #dbdff3;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  box-sizing: content-box;
+  padding: 30px 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 600;
+  background-image: url("./img/Background.png");
+  background-size: 100%;
+  color: #07031a;
+}
