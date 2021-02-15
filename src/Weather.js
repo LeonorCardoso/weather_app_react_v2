@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState("Lisbon");
+  const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
     setWeatherData({
@@ -30,14 +30,14 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "58ce3f6986fa88fa9731f046fe82bae3";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${"Lisbon"}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   } 
 
   if(weatherData.ready){
    return ( 
     <div className="Weather">
-      <WeatherInfo />  
+      <WeatherInfo data={weatherData}/>  
       <div>
           <br />
           Forecast

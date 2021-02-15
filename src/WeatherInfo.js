@@ -1,4 +1,5 @@
 import React from "react";
+import FormattedDate from "./FormattedDate";
 import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
@@ -27,8 +28,8 @@ export default function WeatherInfo(props) {
             <br />
             <br />
             <ul>
-                <li><h3>Lisbon</h3></li>
-                <li>Friday 21:28</li>
+                <li><h3>{props.data.city}</h3></li>
+                <li><FormattedDate date={props.data.date} /></li>
             </ul>
         </div>
       );
