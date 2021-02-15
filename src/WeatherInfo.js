@@ -4,12 +4,12 @@ import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
     return (
-        <div>
+        <div className="WeatherInfo">
             <div className="row justify-content-center">
                 <div className="col-6">
-                    <h3>{props.data.description}</h3>
+                    <h3 className="weather-description">{props.data.description}</h3>
                     <span className="temperature-number">
-                        {props.data.temperature}
+                        {Math.round(props.data.temperature)}
                     </span>
                     {" "}
                     <span className="units">
@@ -26,8 +26,7 @@ export default function WeatherInfo(props) {
                 </div>
             </div>
             <br />
-            <br />
-            <ul>
+            <ul className="city-date">
                 <li><h3>{props.data.city}</h3></li>
                 <li><FormattedDate date={props.data.date} /></li>
             </ul>

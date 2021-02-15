@@ -1,6 +1,19 @@
 li {
   list-style-type: none;
 }
+button {
+  background: #ffefc3;
+  border: 1px solid #fbd46d;
+  border-radius: 4px;
+  padding: 5px 7px;
+  color: #07031a;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #fbd46d;
+  transition: all 200ms ease-in-out;
+}
 
 .Weather {
   border: 3px solid #dbdff3;
@@ -8,11 +21,33 @@ li {
   display: block;
   text-align: center;
   box-sizing: content-box;
-  padding: 30px 30px;
-  font-family: "Courier New", Courier, monospace;
+  padding: 20px 20px;
+  font-family: "Nunito", sans-serif;
   font-size: 15px;
   font-weight: 600;
   background-image: url("./img/Background.png");
   background-size: 100%;
   color: #07031a;
+}
+
+.enter-city {
+  width: 250px;
+  height: 35px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #fbd46d;
+}
+
+.other-city {
+  background: #ffefc3;
+  border: 1px solid #fbd46d;
+  border-radius: 4px;
+  padding: 5px 7px;
+  color: #07031a;
+  font-weight: 600;
+}
+
+.other-city:hover {
+  background: #fbd46d;
+  transition: all 200ms ease-in-out;
 }

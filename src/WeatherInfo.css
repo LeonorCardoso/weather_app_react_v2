@@ -1,0 +1,36 @@
+.WeatherInfo {
+  color: #4f8a8b;
+}
+.weather-description {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+
+.temperature-number {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.units {
+  position: relative;
+  top: -10px;
+}
+
+.weather-temperature .active {
+  color: #4f8a8b;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.side-information {
+  margin-top: 15px;
+}
+
+.city-date {
+  text-align: left;
+  padding-left: 85px;
+}
